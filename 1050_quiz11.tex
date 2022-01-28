@@ -1,0 +1,226 @@
+\documentclass[11pt,addpoints,answers]{exam}
+
+\usepackage[top=0.5in, left=0.75in, right=0.75in, bottom=.75in]{geometry}
+\usepackage{amsmath,amsfonts,nicefrac, amssymb,amsxtra}
+\usepackage{mathtools}
+\usepackage{multicol}
+\usepackage{pdfpages}
+\usepackage{setspace}
+\usepackage{enumitem}
+
+%\usepackage{mathexam}
+%\usepackage{latexsym}
+%\usepackage[square, comma, sort&compress, numbers]{natbib}
+%\usepackage{moresize}
+%\usepackage{algpseudocode}
+\usepackage{stmaryrd}
+%\usepackage{enumitem}
+%\renewcommand{\theenumi}{\alph{enumi}}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+\usepackage{epstopdf}
+\usepackage{epsfig}
+\usepackage{setspace}
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{arrows,decorations.markings}
+\pgfplotsset{compat=1.14}
+\usepgfplotslibrary{units}
+\pgfplotsset{soldot/.style={color=black,only marks,mark=*}}
+\pgfplotsset{holdot/.style={color=black,fill=white,only marks,mark=*}}
+\usepackage{polynom}
+\usepackage{enumerate}
+\usepackage{graphicx,wrapfig,lipsum}
+\allowdisplaybreaks
+
+
+\usepackage[utf8]{inputenc}
+\usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathreplacing}
+%\usepackage{fancyhdr}
+\usepackage{array}
+\usepackage{parskip}
+
+\renewcommand{\arraystretch}{1.2}
+\renewcommand\partlabel{(\thequestion.\arabic{partno})}
+\newcommand{\+}{\, \, + \, \, }
+\renewcommand{\-}{\, \, - \, \, }
+\renewcommand{\=}{\, \, = \, \, }
+
+\newcommand{\emptybox}[2][\textwidth]{%
+  \begingroup
+  \setlength{\fboxsep}{-\fboxrule}%
+  \noindent\framebox[#1]{\rule{0pt}{#2}}%
+  \endgroup
+}
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+\pgfplotsset{compat=1.14}
+
+
+\begin{document}
+\noindent {\Large Quiz, Fall Week 11 \hfill Name: \underline{\hspace{7cm}}}
+
+\noindent {\normalsize {Points possible: \numpoints      \hfill Math 1050-90, Fall 2021, Due 11/16 at 11:59 p.m.}}
+
+{\small \noindent \textbf{Rules/Suggestions:} Write with a dark pencil, so that your work is visible.  \textbf{You are graded on your work, not just answers. Even if you do calculations in your head or on scratch, show work if space is provided. } Write the final answer in the box.
+
+Notes: You are on your honor for this to be your own work.  (You can ask for help on quiz material, but you should not ask for help on specific problems.) }
+\begin{questions}
+
+
+\setlength\columnsep{2cm}
+
+\begin{multicols}{2}
+\question Follow these steps to solve the system of equations:
+\columnbreak
+\begin{equation*}
+\left\{
+\begin{alignedat}{3}
+-2x & {}-{} & 4y & {}={} & 6\quad\quad\quad\quad\quad\quad\\
+3x & {}+{} &5y &  {}={} & 3 \quad\quad\quad\quad\quad\quad\\
+\end{alignedat}
+\right.\end{equation*}
+\end{multicols}
+
+\begin{parts}
+
+\part[6] Consider the corresponding matrix equation $AX=B$.  Write what $A$, $X$ and $B$ are.\\
+\begin{tabular}{|p{1.7in}|p{1.7in}|p{1.7in}|}
+\hline
+   $A=$  & $X=$& $B=$  \\[0.75in]
+   \hline
+\end{tabular}
+
+\part[15] Find $A^{-1}$.  Show work. Simplify the matrix (do not leave a scalar in front of the matrix.)
+\vspace{1in}
+\begin{flushright}\fbox{%
+\begin{minipage}{3in}
+Answer:\\[11ex]
+\end{minipage}}\end{flushright}
+\part[15] Use $A^{-1}$ to solve the system of equations.
+\vspace{1in}
+\begin{flushright}\fbox{%
+\begin{minipage}{3in}
+$(x,y)=$\\[6ex]
+\end{minipage}}\end{flushright}
+\part[6] Show checking your solutions to make sure no mistakes were made.
+
+\vspace{.5in}
+\end{parts}
+
+\vfill
+\pagestyle{empty}
+\hspace*{1in}{\Huge \textbf{Page 1}}
+\newpage
+
+\question Follow these steps to solve the system of equations:
+
+\begin{multicols}{2}
+
+\begin{equation*}
+\left\{
+\begin{alignedat}{4}
+x & {}+{} & y & {}+{} & 2z & {}={} & 1 \quad\quad\quad\quad\quad\quad\\
+3x & {}-{} & 2y & {}-{} & z & {}={} & -1 \quad\quad\quad\quad\quad\quad\\
+-x & {}{} & & {}-{} & 3z & {}={} & 7 \quad\quad\quad\quad\quad\quad\\
+\end{alignedat}
+\right.\end{equation*}
+\vspace*{.5in}
+\begin{parts}
+\columnbreak
+\part[4] Write the augmented form of the matrix.
+\begin{flushright}\fbox{%
+\begin{minipage}{3in}
+Answer:\\[11ex]
+\end{minipage}}\end{flushright}
+
+\end{parts}
+\end{multicols}
+\begin{parts}
+\setcounter{partno}{1}
+\part[24] Reduce the augmented matrix to be upper triangular. Show particularly clear work for this part (you will be graded on this) and indicate what you are doing in each step.  Then solve the system of equations, either as a matrix or using the information in the upper triangular matrix.
+
+\vspace*{4in}
+\begin{flushright}\fbox{%
+\begin{minipage}{3in}
+$(x,y,z)=$\\[4ex]
+
+\end{minipage}}\end{flushright}
+
+\part[6] Show checking your solutions (in all 3 equations, not just 1) to make sure no mistakes were made.
+\end{parts}
+
+\vfill
+\pagestyle{empty}
+\hspace*{3in}{\Huge \textbf{Page 2}}
+\newpage
+
+
+\question Given the following matrices
+\[ A = \begin{bmatrix} 5 & -1 \\ 4 & -2
+\\ -3 & 6\end{bmatrix}, \ \
+B =
+\begin{bmatrix} 1 & -3 \\ 2 & 5 \end{bmatrix}, \ \
+C =
+\begin{bmatrix} -3 & 0&2 \\ 4& 1& -1  \end{bmatrix} ,\ \
+D =
+\begin{bmatrix} -3 & 0\\4&7 \\ 2& -1  \end{bmatrix} \]
+
+compute the following:
+\begin{parts}
+\setlength{\columnseprule}{0pt}
+\begin{multicols}{2}
+\part[6] $AB$
+\part[6] $2B+C$
+\end{multicols}
+
+\vfill
+
+\begin{multicols}{2}
+\begin{flushright}\fbox{%
+\begin{minipage}{1.5in}
+Answer:\\[8ex]
+\end{minipage}}\end{flushright}
+
+\begin{flushright}\fbox{%
+\begin{minipage}{1.5in}
+Answer:\\[8ex]
+\end{minipage}}\end{flushright}
+\end{multicols}
+
+
+
+
+\begin{multicols}{2}
+
+\part[6] $3A-D$
+\part[6] $DC$
+\end{multicols}
+\vfill
+
+\begin{multicols}{2}
+\begin{flushright}\fbox{%
+\begin{minipage}{1.5in}
+Answer:\\[8ex]
+\end{minipage}}\end{flushright}
+
+\begin{flushright}\fbox{%
+\begin{minipage}{1.5in}
+Answer:\\[8ex]
+\end{minipage}}\end{flushright}
+\end{multicols}
+
+\end{parts}
+
+\end{questions}
+
+\pagestyle{empty}
+\hspace*{5in}{\Huge \textbf{Page 3}}
+
+
+
+\end{document}

@@ -1,0 +1,291 @@
+\documentclass[11pt,addpoints,answers]{exam}
+
+\usepackage[top=0.5in, left=0.75in, right=0.75in, bottom=.75in]{geometry}
+\usepackage{amsmath,amsfonts,nicefrac, amssymb,amsxtra}
+\usepackage{mathtools}
+\usepackage{multicol}
+\usepackage{pdfpages}
+\usepackage{setspace}
+\usepackage{enumitem}
+
+%\usepackage{mathexam}
+%\usepackage{latexsym}
+%\usepackage[square, comma, sort&compress, numbers]{natbib}
+%\usepackage{moresize}
+%\usepackage{algpseudocode}
+\usepackage{stmaryrd}
+%\usepackage{enumitem}
+%\renewcommand{\theenumi}{\alph{enumi}}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+\usepackage{epstopdf}
+\usepackage{epsfig}
+\usepackage{setspace}
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{arrows,decorations.markings}
+\pgfplotsset{compat=1.14}
+\usepgfplotslibrary{units}
+\pgfplotsset{soldot/.style={color=black,only marks,mark=*}}
+\pgfplotsset{holdot/.style={color=black,fill=white,only marks,mark=*}}
+\usepackage{polynom}
+\usepackage{enumerate}
+\usepackage{graphicx,wrapfig,lipsum}
+\allowdisplaybreaks
+
+
+\usepackage[utf8]{inputenc}
+\usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathreplacing}
+%\usepackage{fancyhdr}
+\usepackage{array}
+\usepackage{parskip}
+
+\renewcommand{\arraystretch}{1.2}
+\renewcommand\partlabel{(\thequestion.\arabic{partno})}
+\newcommand{\+}{\, \, + \, \, }
+\renewcommand{\-}{\, \, - \, \, }
+\renewcommand{\=}{\, \, = \, \, }
+
+\newcommand{\emptybox}[2][\textwidth]{%
+  \begingroup
+  \setlength{\fboxsep}{-\fboxrule}%
+  \noindent\framebox[#1]{\rule{0pt}{#2}}%
+  \endgroup
+}
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+\pgfplotsset{compat=1.14}
+
+
+\begin{document}
+\noindent {\Large Quiz, Fall Week 10 \hfill Name: \underline{\hspace{7cm}}}
+
+\noindent {\normalsize {Points possible: \numpoints      \hfill Math 1050-90, Fall 2021, Due 11/9 at 11:59 p.m.}}
+
+{\small \noindent \textbf{Rules/Suggestions:} Write with a dark pencil, so that your work is visible.  \textbf{You are graded on your work, not just answers. Even if you do calculations in your head or on scratch, show work if space is provided. } Write the final answer in the box.
+
+Notes: You are on your honor for this to be your own work.  (You can ask for help on quiz material, but you should not ask for help on specific problems.) }
+\begin{questions}
+
+
+\setlength\columnsep{1cm}
+
+\question Solve the system of linear equations, if possible.  State any solutions and classify each system as consistent independent, consistent dependent, or inconsistent.  (If not possible, enter DNE in answer box.  If the system is dependent, enter $x$ and $y$ in terms of $z$.)
+\begin{multicols}{2}
+\begin{parts}
+
+\part[16]
+\begin{align*}
+    x + y + z &= 6 \\
+    -2x + y + z &= -3 \\
+    2x - y + 4z &= 8
+\end{align*}
+
+\begin{checkboxes}
+ \choice Consistent Independent
+ \choice Consistent Dependent
+ \choice Inconsistent \\
+\end{checkboxes}
+
+
+\vspace*{2.5in}
+\begin{flushright}
+\fbox{%
+\begin{minipage}{1 in}
+$x =$ \\[2ex]
+\end{minipage}}
+
+\fbox{%
+\begin{minipage}{1 in}
+$y =$ \\[2ex]
+\end{minipage}}
+
+\fbox{%
+\begin{minipage}{1 in}
+$z =$ \\[2ex]
+\end{minipage}}
+\end{flushright}
+
+\columnbreak
+\part[16]
+\begin{align*}
+    x + y + z &= 6 \\
+    y + 3z &= 0
+\end{align*}
+
+\begin{checkboxes}
+ \choice Consistent Independent
+ \choice Consistent Dependent
+ \choice Inconsistent \\
+\end{checkboxes}
+
+\vspace*{2.5in}
+\begin{flushright}
+\fbox{%
+\begin{minipage}{1 in}
+$x =$ \\[2ex]
+\end{minipage}}
+
+\fbox{%
+\begin{minipage}{1 in}
+$y =$ \\[2ex]
+\end{minipage}}
+
+\fbox{%
+\begin{minipage}{1 in}
+$z =$ \\[2ex]
+\end{minipage}}
+\end{flushright}
+
+
+\end{parts}\end{multicols}
+
+
+
+ \vspace{1cm}
+\pagestyle{empty}
+\hspace*{1in}{\Huge \textbf{Page 1}}
+
+\newpage
+
+\question[20] In a bag, a child has $315$ coins worth $\$15.50$.  There are three types of coins: pennies, nickels, and dimes.  If the bag contains the same number of nickels as dimes, how many of each type of coin is in the bag?
+
+\vspace*{2in}
+\begin{flushright}
+\fbox{%
+\begin{minipage}{2 in}
+Number of pennies: \\[3ex]
+\end{minipage}}
+
+\fbox{%
+\begin{minipage}{2 in}
+Number of nickels: \\[3ex]
+\end{minipage}}
+
+\fbox{%
+\begin{minipage}{2 in}
+Number of dimes: \\[3ex]
+\end{minipage}}
+\end{flushright}
+\vspace{.5cm}
+
+\question The following matrices are in reduced row echelon form.  Determine the solutions of each of the corresponding system of linear equations.
+\begin{parts}
+\part[6]
+\begin{equation*}\begin{bmatrix}[ccc|c]
+  1 & 0 & 0 & 4 \\
+   0 & 1 & 0 & -1  \\
+   0 & 0 & 1 & 3  \\
+\end{bmatrix}\end{equation*}
+\vspace{.25cm}
+
+\begin{multicols}{3}
+\begin{flushright}
+
+\fbox{%
+\begin{minipage}{1 in}
+$x =$ \\[2ex]
+\end{minipage}}\end{flushright}
+
+\columnbreak
+\begin{center}
+\fbox{%
+\begin{minipage}{1 in}
+$y =$ \\[2ex]
+\end{minipage}}\end{center}
+
+\columnbreak
+\begin{flushleft}
+\fbox{%
+\begin{minipage}{1 in}
+$z =$ \\[2ex]
+\end{minipage}}\end{flushleft}
+
+\end{multicols}
+
+\part[6]
+\begin{equation*}\begin{bmatrix}[ccc|c]
+  1 & 0 & 7 & -2 \\
+   0 & 1 & -10 & 3  \\
+   0 & 0 & 0 & 0  \\
+\end{bmatrix}\end{equation*}
+\vspace{.25cm}
+
+\begin{multicols}{3}
+\begin{flushright}
+
+\fbox{%
+\begin{minipage}{1 in}
+$x =$ \\[2ex]
+\end{minipage}}\end{flushright}
+
+\columnbreak
+\begin{center}
+\fbox{%
+\begin{minipage}{1 in}
+$y =$ \\[2ex]
+\end{minipage}}\end{center}
+
+\columnbreak
+\begin{flushleft}
+\fbox{%
+\begin{minipage}{1 in}
+$z =$ \\[2ex]
+\end{minipage}}\end{flushleft}
+
+\end{multicols}
+\end{parts}
+
+ \vspace{1cm}
+\pagestyle{empty}
+\hspace*{3in}{\Huge \textbf{Page 2}}
+
+\newpage
+
+
+\question[12] Solve the system of $2$x$2$ linear equations using elementary row operations on an augmented matrix.  Give your answer as an ordered pair.
+\begin{equation*}
+\left\{
+\begin{alignedat}{3}
+x & {}+{} & y & {}={} & -3\quad\quad\quad\quad\quad\quad\\
+2x & {}+{} &4y &  {}={} & -10 \quad\quad\quad\quad\quad\quad\\
+\end{alignedat}
+\right.\end{equation*}
+
+\vspace{1.5in}
+\begin{flushright}\fbox{%
+\begin{minipage}{2in}
+$(x,y)=$\\[3ex]
+\end{minipage}}\end{flushright}
+\vspace{.5cm}
+
+\question[24] Solve the system of $3$x$3$ linear equations using elementary row operations on an augmented matrix.  Give your answer as an ordered pair.
+\begin{equation*}
+\left\{
+\begin{alignedat}{4}
+4x & {}+{} & 3y & {}-{} & 8z & {}={} & -19\quad\quad\quad\quad\quad\quad\\
+x & {}+{} & y & {}-{} & 2z & {}={} & -4 \quad\quad\quad\quad\quad\quad\\
+3x & {}+{} & 2y & {}-{} & 5z & {}={} & -13 \quad\quad\quad\quad\quad\quad\\
+\end{alignedat}
+\right.\end{equation*}
+
+\vspace{3.5in}
+\begin{flushright}\fbox{%
+\begin{minipage}{2.5in}
+$(x,y,z)=$\\[3ex]
+\end{minipage}}\end{flushright}
+
+
+  \vfill
+\pagestyle{empty}
+\hspace*{5in}{\Huge \textbf{Page 3}}
+
+\end{questions}
+
+
+
+\end{document}

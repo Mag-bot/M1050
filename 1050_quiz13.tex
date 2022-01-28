@@ -1,0 +1,347 @@
+\documentclass[11pt,addpoints,answers]{exam}
+
+\usepackage[top=0.5in, left=0.75in, right=0.75in, bottom=.75in]{geometry}
+\usepackage{amsmath,amsfonts,nicefrac, amssymb,amsxtra}
+\usepackage{mathtools}
+\usepackage{multicol}
+\usepackage{pdfpages}
+\usepackage{setspace}
+\usepackage{enumitem}
+
+%\usepackage{mathexam}
+%\usepackage{latexsym}
+%\usepackage[square, comma, sort&compress, numbers]{natbib}
+%\usepackage{moresize}
+%\usepackage{algpseudocode}
+\usepackage{stmaryrd}
+%\usepackage{enumitem}
+%\renewcommand{\theenumi}{\alph{enumi}}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+\usepackage{epstopdf}
+\usepackage{epsfig}
+\usepackage{setspace}
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{arrows,decorations.markings}
+\pgfplotsset{compat=1.14}
+\usepgfplotslibrary{units}
+\pgfplotsset{soldot/.style={color=black,only marks,mark=*}}
+\pgfplotsset{holdot/.style={color=black,fill=white,only marks,mark=*}}
+\usepackage{polynom}
+\usepackage{enumerate}
+\usepackage{graphicx,wrapfig,lipsum}
+\allowdisplaybreaks
+
+
+\usepackage[utf8]{inputenc}
+\usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathreplacing}
+%\usepackage{fancyhdr}
+\usepackage{array}
+\usepackage{parskip}
+
+\renewcommand{\arraystretch}{1.2}
+\renewcommand\partlabel{(\thequestion.\arabic{partno})}
+\newcommand{\+}{\, \, + \, \, }
+\renewcommand{\-}{\, \, - \, \, }
+\renewcommand{\=}{\, \, = \, \, }
+
+\newcommand{\emptybox}[2][\textwidth]{%
+  \begingroup
+  \setlength{\fboxsep}{-\fboxrule}%
+  \noindent\framebox[#1]{\rule{0pt}{#2}}%
+  \endgroup
+}
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+\pgfplotsset{compat=1.14}
+
+
+\begin{document}
+\noindent {\Large Quiz, Fall Week 13 \hfill Name: \underline{\hspace{7cm}}}
+
+\noindent {\normalsize {Points possible: \numpoints      \hfill Math 1050-90, Fall 2021, Due 11/30 at 11:59 p.m.}}
+
+{\small \noindent \textbf{Rules/Suggestions:} Write with a dark pencil, so that your work is visible.  \textbf{You are graded on your work, not just answers. Even if you do calculations in your head or on scratch, show work if space is provided. } Write the final answer in the box.
+
+Notes: You are on your honor for this to be your own work.  (You can ask for help on quiz material, but you should not ask for help on specific problems.) }
+
+\begin{questions}
+\setlength{\columnsep}{1cm}
+
+\question[10] Enter the first five terms of the following recursively defined arithmetic sequence.
+\[a_1 = -5, \quad a_n = a_{n-1} + n, \quad n\geq 3\]
+\vspace{0.25in}
+
+\begin{multicols}{5}
+
+\begin{flushright}\fbox{%
+\begin{minipage}{1in}
+$a_1=$\\[1ex]
+\end{minipage}}\end{flushright}
+
+\columnbreak
+
+\begin{flushright}\fbox{%
+\begin{minipage}{1in}
+$a_2=$ \\[1ex]
+\end{minipage}}\end{flushright}
+
+\columnbreak
+
+\begin{flushright}\fbox{%
+\begin{minipage}{1in}
+$a_3=$ \\[1ex]
+\end{minipage}}\end{flushright}
+
+\columnbreak
+
+\begin{flushright}\fbox{%
+\begin{minipage}{1in}
+$a_4=$ \\[1ex]
+\end{minipage}}\end{flushright}
+
+\columnbreak
+
+\begin{flushright}\fbox{%
+\begin{minipage}{1in}
+$a_5=$ \\[1ex]
+\end{minipage}}\end{flushright}
+\end{multicols}
+
+\question Given the sequence $37, 31, 25, 19, 13, ...$, find the following information:
+\begin{parts}
+
+\part[5] Find an explicit formula for the $n^{th}$ term in the sequence.
+
+\vspace{0.5in}
+\begin{flushright}\fbox{%
+\begin{minipage}{1.5in}
+$a_n=$\\[3ex]
+\end{minipage}}\end{flushright}
+
+\begin{multicols}{2}
+
+\part[5] Find $a_{21}$.\\
+
+\begin{flushright}\fbox{%
+\begin{minipage}{1.5in}
+$a_{21}=$ \\[3ex]
+\end{minipage}}\end{flushright}
+
+\columnbreak
+
+\part[5] Which term is $-569$?\\
+
+\vspace{1in}
+\begin{flushright}\fbox{%
+\begin{minipage}{1.5in}
+Answer:\\[3ex]
+\hspace*{1.2in} {\large \textit{th}}
+\end{minipage}}\end{flushright}
+
+\end{multicols}
+\end{parts}
+
+\vfill
+\question[5] Find the 6\textsuperscript{th} term of the sequence $a_1 = 5$ and  $a_n  = (-2)a_{n-1}$, showing work.
+\vspace*{.8in}
+\begin{flushright}\fbox{%
+\begin{minipage}{2 in}
+Answer:\\[3ex]
+\end{minipage}}\end{flushright}
+\pagestyle{empty}
+
+\hspace*{1in}{\Huge \textbf{Page 1}}
+
+\newpage
+
+\question[10] Use the given information to write the first five terms of the geometric sequence.
+\[a_1 = 64, \quad r = \frac{1}{8}\]
+\vspace{0.25in}
+
+\begin{multicols}{5}
+
+\begin{flushright}\fbox{%
+\begin{minipage}{1in}
+$a_1=$\\[1ex]
+\end{minipage}}\end{flushright}
+
+\columnbreak
+
+\begin{flushright}\fbox{%
+\begin{minipage}{1in}
+$a_2=$ \\[1ex]
+\end{minipage}}\end{flushright}
+
+\columnbreak
+
+\begin{flushright}\fbox{%
+\begin{minipage}{1in}
+$a_3=$ \\[1ex]
+\end{minipage}}\end{flushright}
+
+\columnbreak
+
+\begin{flushright}\fbox{%
+\begin{minipage}{1in}
+$a_4=$ \\[1ex]
+\end{minipage}}\end{flushright}
+
+\columnbreak
+
+\begin{flushright}\fbox{%
+\begin{minipage}{1in}
+$a_5=$ \\[1ex]
+\end{minipage}}\end{flushright}
+\end{multicols}
+
+\question[10] Use the given information to write the first five terms of the geometric sequence.
+\[a_6 = -32, \quad a_9 = 256\]
+\vspace{1in}
+
+\begin{multicols}{5}
+
+\begin{flushright}\fbox{%
+\begin{minipage}{1in}
+$a_1=$\\[1ex]
+\end{minipage}}\end{flushright}
+
+\columnbreak
+
+\begin{flushright}\fbox{%
+\begin{minipage}{1in}
+$a_2=$ \\[1ex]
+\end{minipage}}\end{flushright}
+
+\columnbreak
+
+\begin{flushright}\fbox{%
+\begin{minipage}{1in}
+$a_3=$ \\[1ex]
+\end{minipage}}\end{flushright}
+
+\columnbreak
+
+\begin{flushright}\fbox{%
+\begin{minipage}{1in}
+$a_4=$ \\[1ex]
+\end{minipage}}\end{flushright}
+
+\columnbreak
+
+\begin{flushright}\fbox{%
+\begin{minipage}{1in}
+$a_5=$ \\[1ex]
+\end{minipage}}\end{flushright}
+\end{multicols}
+
+\question Given the sequence $\frac{1}{81}, \frac{1}{27}, \frac{1}{9}, \frac{1}{3}, 1...$, find the following information:
+\begin{parts}
+
+\part[5] Find an explicit formula for the $n^{th}$ term in the sequence.
+
+\vspace{0.5in}
+\begin{flushright}\fbox{%
+\begin{minipage}{1.5in}
+$a_n=$\\[3ex]
+\end{minipage}}\end{flushright}
+
+\begin{multicols}{2}
+
+\part[5] Find $a_8$.\\
+
+\begin{flushright}\fbox{%
+\begin{minipage}{1.5in}
+$a_8=$ \\[3ex]
+\end{minipage}}\end{flushright}
+
+\columnbreak
+
+\part[5] Which term is $729$?\\
+
+\vspace{1in}
+\begin{flushright}\fbox{%
+\begin{minipage}{1.5in}
+Answer:\\[3ex]
+\hspace*{1.2in} {\large \textit{th}}
+\end{minipage}}\end{flushright}
+
+\end{multicols}
+\end{parts}
+
+\vfill
+
+
+\pagestyle{empty}
+
+\hspace*{3in}{\Huge \textbf{Page 2}}
+\newpage
+
+\question[15] Write the sum  $5 + 7 + 9 + 11 + ... + 77$  using sigma notation. Show work for how you are determining the parts.
+
+\vspace*{0.35in}
+\begin{flushright}\fbox{%
+\begin{minipage}{3 in}
+ $5 + 7 + 9 + 11 + ... + 77 = $
+
+{\LARGE$$ \sum_{\underline{\quad}}^{\underline{\quad}} \quad(\quad\underline{\quad\quad\quad\quad\quad\quad\quad} \quad) $$}
+\end{minipage}}\end{flushright}
+
+\question Compute the sums or state if they diverge (i.e. are infinite).  Show calculations or formulas. Simplify all sums, differences and fractions (fractions should not contain fractions).  You may leave products un-simplified.
+
+\begin{parts}
+\begin{multicols}{2}
+\part[5] $$\sum_{i=3}^{5} i^3(-1)^{i} = \hspace{2in}$$
+\vspace*{1in}
+
+\begin{flushright}\fbox{%
+\begin{minipage}{2 in}
+Answer:\\[3ex]
+\end{minipage}}\end{flushright}
+
+\columnbreak
+
+\part[5] $$\sum_{i=1}^{40} (3-10i)= \hspace{2in}$$
+\vspace*{1.1in}
+\begin{flushright}\fbox{%
+\begin{minipage}{2 in}
+Answer:\\[3ex]
+\end{minipage}}\end{flushright}
+\end{multicols}
+
+\vspace{0.15in}
+
+\begin{multicols}{2}
+\part[5] $$\sum_{i=1}^{\infty} (4i)= \hspace{2in}$$
+\vspace*{1.1in}
+\begin{flushright}\fbox{%
+\begin{minipage}{2 in}
+Answer:\\[3ex]
+\end{minipage}}\end{flushright}
+
+\columnbreak
+
+\part[5] $$\sum_{i=1}^{\infty}  10\left(\dfrac{1}{8}\right)^i = \hspace{2in}$$
+\vspace*{1.1in}
+\begin{flushright}\fbox{%
+\begin{minipage}{2 in}
+Answer:\\[3ex]
+\end{minipage}}\end{flushright}
+\end{multicols}
+\end{parts}
+
+\vspace{.3cm}
+
+
+\end{questions}
+
+  \vfill
+\pagestyle{empty}
+\hspace*{5in}{\Huge \textbf{Page 3}}
+
+\end{document}
